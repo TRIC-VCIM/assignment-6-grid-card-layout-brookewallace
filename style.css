@@ -1,0 +1,81 @@
+@supports (grid-area: auto) {
+
+.site {
+  background-color: #0c213b;
+}
+
+header {
+  color: #a1eff7;
+  font-family: 'Emblema One', cursive;
+  margin: 35px 45px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1350px;
+}
+
+.card {
+  display: grid;
+  background-color: #558ca6;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #a1eff7;
+  align-items: center;
+}
+
+.card h1 {
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 1fr 1fr;
+  font-family: 'Staatliches', cursive;
+  color: white;
+  margin-top: 3px;
+  margin-bottom: 0;
+  justify-self: center;
+}
+
+.card h3 {
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  font-family: 'Sen', sans-serif;
+  color: #0c213b;
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+.card p{
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  font-family: 'Marvel', sans-serif;
+  color: white;
+}
+
+.card img {
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  width: 200px;
+  height: 300px;
+  justify-self: center;
+  margin: 10px;
+}
+
+p {
+  line-height: 1px;
+}
+
+.long {
+  line-height: 20px;
+}
+
+footer {
+  color: white;
+  padding: 15px 45px;
+  font-family: 'Sen', sans-serif;
+}
+
+}
